@@ -101,3 +101,75 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+/* edit blog form */
+.edit {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.edit label {
+  text-align: left;
+  display: block;
+}
+.edit h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.edit input, .edit textarea, .edit select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.edit button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.edit button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Filter section on hom page */
+
+/* Filter bar container */
+.search-filter-bar {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+/* Shared styles so input and dropdown match in height and appearance */
+.search-filter-bar input,
+.search-filter-bar select {
+  padding: 10px 12px;
+  font-size: 16px;
+  font-family: inherit;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Let the search input take up the remaining width */
+.search-filter-bar input {
+  flex: 1;
+}
+
+/* Subtle highlight when clicking into either field */
+.search-filter-bar input:focus,
+.search-filter-bar select:focus {
+  outline: none;
+  border-color: #f1356d; /* Classic Net Ninja blog pink accent */
+}

@@ -10,7 +10,7 @@ const Create = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const blog = {title, body, author};
+        const blog = {title, body, author, likes:0};
         setIsLoading(true);
         
         fetch('http://localhost:8000/blogs',{
